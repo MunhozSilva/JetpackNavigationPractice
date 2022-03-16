@@ -32,6 +32,11 @@ class NotesFragment : Fragment() {
         notesViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
+        val textViewTwo: TextView = binding.textNotesTwo
+        notesViewModel.textTwo.observe(viewLifecycleOwner) {
+            textViewTwo.text = it
+        }
         return root
     }
 
