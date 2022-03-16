@@ -10,4 +10,9 @@ class NotesViewModel : ViewModel() {
         value = "This is notes Fragment"
     }
     val text: LiveData<String> = _text
+
+    private val _textTwo = MutableLiveData<String>().apply {
+        value = "You don't have any note"
+    }
+    val textTwo: LiveData<String> = _textTwo
 }
